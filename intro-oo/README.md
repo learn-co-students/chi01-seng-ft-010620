@@ -25,5 +25,5 @@ Write an implementation of a bank account that meets the following requirements:
 
 * 😀can print the balance of the account
 * 😻can deposit money into the account
-* can withdraw money from the account
+* 🥰can withdraw money from the account (only if balance is enough though!)
 * 😆keeps track of the customer id of the account
