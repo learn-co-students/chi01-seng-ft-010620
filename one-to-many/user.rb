@@ -24,6 +24,23 @@ class User
     # @tweets << new_tweet
     # Associate this ONE user with the tweet that was made
   end
+
+  def like_tweet(tweet)
+    Like.new(tweet, self)
+  end
+
+  def likes
+    Like.all.select do |like|
+      like.user == self
+    end
+  end
+
+  def liked_tweets
+    # self.likes.map(&:tweet)
+    self.likes.map do |like|
+      like.tweet
+    end
+  end
 end
 
 # p "user class file"

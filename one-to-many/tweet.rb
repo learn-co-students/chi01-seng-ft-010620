@@ -30,4 +30,16 @@ class Tweet
   def username
     self.user.username
   end
+
+  def likes
+    Like.all.select do |like|
+      like.tweet == self
+    end
+  end
+
+  def liking_users
+    self.likes.map do |my_like|
+      my_like.user
+    end
+  end
 end
