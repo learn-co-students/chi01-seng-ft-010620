@@ -1,3 +1,16 @@
+User story: As a user, I want to add a tag to a book
+- Under the hood: I need to help the user add a TagAssignment to the database
+- Adding to database method: TagAssignment.new , TagAssignment.save
+- OR TagAssignment.create
+- Info a TagAssignment needs: a Tag id, and a Book id
+- Interface: User selects from list of books, then from list of tags,
+- ...app keeps track of user choices
+- ...then app uses them to create a new TagAssignment in db
+
+
+
+
+
 What is an MVP?
 
 How do I plan my project?

@@ -3,11 +3,17 @@ class Book < ActiveRecord::Base
   has_many :tags, through: :tag_assignments
 
   def list_display
+    if self.description
+      desc = self.description[0..140]
+    else
+      desc = "N/A"
+    end
+    
     <<~BOOK_DEETS
       -----------------------------------------
       Title: #{self.title}
       Authors: #{self.authors}
-      Description: #{self.description[0..140]}
+      Description: #{desc}
       -----------------------------------------
 
 
