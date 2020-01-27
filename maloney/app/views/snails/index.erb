@@ -1,0 +1,7 @@
+<h1>All Snails</h1>
+
+<% @snails.each do |snail| %>
+  <p><a href="/snails/<%= snail.id %>"><%= snail.name %></a> (<%= snail.shell_color %>)</p>
+  <!-- Commented out HTML with ERB tags will STILL try to run the ruby in those tags! Watch out! -->
+  <!-- <p><%= "#{snail.name} (#{snail.shell_color})" %></p> -->
+<% end %>

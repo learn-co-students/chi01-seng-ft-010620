@@ -1,0 +1,10 @@
+<h1>Welcome to Maloney!</h1>
+
+<ul class="malones-list">
+  <% @malones.each do |malone| %>
+    <li>
+      <img class="malone-photo" src="images/<%= malone.image_url %>" alt="<%= malone.description %>">
+      <h2>👆👆👆<%= malone.title %>👆👆👆</h2>
+    </li>
+  <% end %>
+</ul>
