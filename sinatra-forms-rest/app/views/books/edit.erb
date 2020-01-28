@@ -1,0 +1,13 @@
+<h1>Edit this Book!</h1>
+
+<form class="edit-book-form" action="/books/<%= @book.id %>" method="POST">
+  <input type="hidden" name="_method" value="PUT">
+  Title: <input type="text" name="book[title]" value="<%= @book.title %>">
+  <br>
+  Author: <input type="text" name="book[author]" value="<%= @book.author %>">
+  <br>
+  Snippet: <textarea name="book[snippet]" rows="8" cols="50">
+    <%= @book.snippet %>
+  </textarea>
+  <input type="submit" value="Update this Book">
+</form>

@@ -16,4 +16,21 @@
   <li>
     <a href="/books/<%= @book.id %>/edit" style="color: red; font-weight: bold;">Edit book</a>
   </li>
+  <li>
+    <form class="delete-book-form" action="/books/<%= @book.id %>" method="POST">
+      <input type="hidden" name="_method" value="DELETE">
+      <input id="delete-btn" type="submit" value="Delete book" style="
+        background: none!important;
+        border: none;
+        padding: 0!important;
+        /*optional*/
+        font-family: Times, serif;
+        font-size: 16px;
+        font-style: bold;
+        /*input has OS specific font-family*/
+        color: red;
+        text-decoration: underline;
+        cursor: pointer;">
+    </form>
+  </li>
 </ul>
