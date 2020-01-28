@@ -1,0 +1,24 @@
+<h1>New Book</h1>
+
+<!-- post '/books' -->
+
+<form class="new-book-form" action="/books" method="post">
+  <ul style="list-style-type: none">
+    <li>
+      <label for="book-title">Title:</label>
+      <input id="book-title" type="text" name="book[title]" placeholder="My Book">
+    </li>
+    <li>
+      <label for="book-author">Author:</label>
+      <input id="book-author" type="text" name="book[author]" placeholder="My Author">
+    </li>
+    <li>
+      <label for="book-snippet">Snippet:</label>
+      <input id="book-snippet" type="text" name="book[snippet]" placeholder="My Snippet">
+    </li>
+    <li>
+      <input type="submit" value="Create Book">
+    </li>
+  </ul>
+
+</form>
