@@ -1,0 +1,15 @@
+<h1>A Wild Song Appears!</h1>
+
+<%= @song.name %>
+
+by <%= @song.artist.name %>
+
+<h3>Recorded to satisfy fans of the following genres:</h3>
+
+<ul>
+  <% @song.genres.each do |genre| %>
+    <li>
+      <%= genre.name %>
+    </li>
+  <% end %>
+</ul>
