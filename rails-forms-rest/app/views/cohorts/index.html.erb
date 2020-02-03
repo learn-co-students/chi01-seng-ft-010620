@@ -1,0 +1,15 @@
+<h1>Cohorts</h1>
+<nav>
+  <ul>
+    <li>
+      <a href="/cohorts/new">Create new cohort</a>
+    </li>
+  </ul>
+</nav>
+<ul>
+  <% @cohorts.each do |cohort| %>
+    <li>
+      <a href="/cohorts/<%= cohort.id %>"><%= cohort.name %></a>
+    </li>
+  <% end %>
+</ul>

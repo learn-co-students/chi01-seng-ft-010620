@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @taste_tester.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @taste_tester.age %>
+</p>
+
+<%= link_to 'Edit', edit_taste_tester_path(@taste_tester) %> |
+<%= link_to 'Back', taste_testers_path %>

@@ -1,0 +1,10 @@
+<%= @cohort.name %>
+<form action="/cohorts/<%= @cohort.id %>" method="post">
+  <input name="_method" type="hidden" value="patch" />
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <label>
+    <input type="text" name="cohort[name]" value="<%= @cohort.name %>">
+  </label>
+
+  <input type="submit">
+</form>

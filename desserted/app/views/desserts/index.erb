@@ -1,0 +1,7 @@
+<h1>Huh? Desserts? YEAH</h1>
+
+<% @desserts.each do |dessert| %>
+  <!-- <p><a href="/desserts/<%= dessert.id %>"><%= dessert.name %></a></p> -->
+
+  <p><%= link_to dessert.name.titleize, dessert %></p>
+<% end %>

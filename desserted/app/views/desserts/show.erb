@@ -1,0 +1,13 @@
+<h1>One dessert.,</h1>
+
+<%= @dessert.name %>
+
+<% if @dessert.gluteny %>
+  <h3>Allergy warning! I contain gluten.</h3>
+<% else %>
+  <h3>Dig in! No gluten here.</h3>
+<% end %>
+
+<a href=<%= desserts_path %>>Back to Index</a>
+
+<%= link_to("Back to the Index", desserts_path) %>
