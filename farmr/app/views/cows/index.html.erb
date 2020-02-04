@@ -1,0 +1,9 @@
+<h1>cows!</h1>
+
+<ul>
+  <% @cows.each do |cow| %>
+    <li><%= cow.name %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Create new cow...", new_cow_path %>
