@@ -1,12 +1,12 @@
 <h1>Let's work on forms!</h1>
-<%= form_tag "/cows" do %>
-  <p>Name: <%= text_field_tag "cow[name]" %></p>
-  <p>Spots: <%= number_field_tag "cow[spots]" %></p>
-  Farmer: <%= select_tag "cow[farmer_id]", options_from_collection_for_select(@farmers, :id, :name) %>
-  <%= submit_tag "Create Cow" %>
+
+<% if flash[:errors] %>
+  <% flash[:errors].each do |error| %>
+    <p style="color:red;"><%= error %></p>
+  <% end %>
 <% end %>
 
-<%= form_for :cow, url: cows_path do |f| %>
+<%= form_for @cow do |f| %>
   <p>Name: <%= f.text_field :name %></p>
   <p>Spots: <%= f.number_field :spots %></p>
   <p>Farmer: <%= f.collection_select(:farmer_id, @farmers, :id, :name) %></p>

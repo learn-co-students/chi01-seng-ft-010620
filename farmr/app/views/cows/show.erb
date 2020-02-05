@@ -1,0 +1,6 @@
+<h1>Cowdy! I'm <%= @cow.name %>.</h1>
+
+<p>I have <%= @cow.spots %> spot<%= @cow.spots == 1 ? "" : "s"%>!</p>
+<p>I belong to <%= @cow.farmer.name %>.</p>
+
+<%= link_to "Back to Index", cows_path %>
