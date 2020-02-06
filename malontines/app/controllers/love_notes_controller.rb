@@ -1,0 +1,2 @@
+class LoveNotesController < ApplicationController
+end

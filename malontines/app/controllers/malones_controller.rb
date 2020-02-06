@@ -1,0 +1,2 @@
+class MalonesController < ApplicationController
+end

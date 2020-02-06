@@ -1,0 +1,106 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ * TODO: DEBUG FOLLOWING THREE REQUIRES
+ * require jquery-rails
+ * require popper
+ * require bootstrap-sprockets
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bootstrap";
+
+ html, body {
+   background: pink;
+   font-family: 'M PLUS Rounded 1c', sans-serif;
+   -webkit-text-stroke: 1px black;
+ }
+
+ .color-flamingo {
+   color: #ffb9f5 !important;
+ }
+
+ .color-sky {
+   color: #beeaff !important;
+ }
+
+ .color-purps {
+   color: #e8cdff !important;
+ }
+
+ .color-grassy {
+   color: #b9ffe5 !important;
+ }
+
+ .color-salmon {
+   color: #ffd1d1 !important;
+ }
+
+ .app-container {
+  text-align: center;
+ }
+
+ .large-title {
+   font-size: 70px;
+ }
+
+ ul {
+   list-style-type: none;
+   padding-left: 0;
+ }
+
+ .love-note-overlay-center,
+ .love-note-overlay-left,
+ .love-note-overlay-right {
+   position: relative;
+   top: -365px;
+   font-size: 70px;
+   color: pink;
+   min-height: 208px;
+   width: 300px;
+   margin: 0 auto;
+ }
+
+ .in-heart-link:link,
+ .in-heart-link:hover,
+ .in-heart-link:visited,
+ .in-heart-link:active {
+   text-decoration: none;
+ }
+
+ .love-note-overlay-left {
+   top: -420px;
+   left: -80px;
+ }
+
+ .love-note-overlay-right {
+   top: -420px;
+   right: -80px;
+ }
+
+ .malontines-container {
+   text-align: center;
+ }
+
+ .malontines-list {
+   display: inline-block;
+   text-align: center;
+ }
+
+ .malontine-in-list {
+   height: 520px;
+ }
+
+ .malontine-creator {
+   position: relative;
+   bottom: 260px;
+ }

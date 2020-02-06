@@ -1,0 +1,9 @@
+<%= form_for malontine do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :love_note_message %>
+  <%= f.text_field :love_note_message %>
+  <%= f.label :malone_id %>
+  <%= f.collection_select :malone_id, malones, :id, :name %>
+  <%= f.submit %>
+<% end %>

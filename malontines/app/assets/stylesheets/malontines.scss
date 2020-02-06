@@ -1,0 +1,11 @@
+// Place all the styles related to the malontines controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.malontine-in-list {
+  img {
+    object-fit: cover;
+    width:350px;
+    height:350px;
+  }
+}

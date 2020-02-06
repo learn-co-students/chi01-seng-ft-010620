@@ -1,0 +1,2 @@
+module MalontinesHelper
+end
