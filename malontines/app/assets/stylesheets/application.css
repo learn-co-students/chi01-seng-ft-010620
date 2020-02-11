@@ -70,6 +70,10 @@
    margin: 0 auto;
  }
 
+ .in-heart-link {
+   display: inline-block;
+ }
+
  .in-heart-link:link,
  .in-heart-link:hover,
  .in-heart-link:visited,

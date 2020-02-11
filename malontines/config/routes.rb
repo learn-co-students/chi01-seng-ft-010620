@@ -3,4 +3,8 @@ Rails.application.routes.draw do
   root "malontines#index"
   # TODO: ADD SHOW ROUTE WHEN READY FOR SCREENCAP CHALLENGE
   resources :malontines
+  resources :users, only: [:new, :create, :show]
+  get "/login", to: "sessions#new", as: "login"
+  delete "/logout", to: "sessions#destroy"
+  post "/login", to: "sessions#create"
 end

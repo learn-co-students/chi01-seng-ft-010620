@@ -1,8 +1,12 @@
 <h1><%= @malontine.title %></h1>
 
-<%= link_to svg(@malontine.malone.svg_url), @malontine %>
-<a href="<%= malontine_path(@malontine) %>"><h1 class="love-note-overlay-<%= @malontine.malone.note_position %> color-<%= random_pastel %>"><%= @malontine.love_note_message %></h1></a>
-<h3 class="malontine-creator">(created by <%= @malontine.creator.username %>)</h3>
+<div class="single-malone">
+  <%= link_to svg(@malontine.malone.svg_url), @malontine, class_name: "malone-svg" %>
+  <a class="in-heart-link" href="<%= malontine_path(@malontine) %>"><h1 class="love-note-overlay-<%= @malontine.malone.note_position %> color-<%= random_pastel %>"><%= @malontine.love_note_message %></h1></a>
+  <h3 class="malontine-creator">(created by <%= @malontine.creator.username %>)</h3>
+</div>
 
-<%= link_to "Edit This 👨🏽‍🌾", edit_malontine_path %>
-<%= link_to "Delete This 😱", malontine_path, method: :delete %>
+
+<p><%= link_to "Edit This 👨🏽‍🌾", edit_malontine_path %></p>
+<p><%= link_to "Delete This 😱", malontine_path, method: :delete %></p>
+<p><%= link_to "Back Home", malontines_path %></p>

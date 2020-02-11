@@ -1,5 +1,7 @@
 class MalontinesController < ApplicationController
+  include SessionsHelper
   before_action :find_malontine, only: [:show, :destroy, :edit]
+  before_action :authorize!, only: [:new, :create]
 
   def index
     @malontines = Malontine.order('created_at DESC').page(params[:page])
@@ -8,10 +10,11 @@ class MalontinesController < ApplicationController
   def new
     @malones = Malone.all
     @malontine = Malontine.new
+    render :new
   end
 
   def create
-    malontine = Malontine.new(malontine_params.merge({creator: User.first}))
+    malontine = Malontine.new(malontine_params.merge({creator_id: session[:user_id]}))
     malontine.save
     redirect_to malontines_path
   end
