@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Toy Tale</title>
-    <script defer type="text/javascript" src="src/index.js"></script>
+    <script type="text/javascript" src="src/index.js"></script>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
@@ -15,7 +15,7 @@
     </div>
 
     <div class="container">
-      <form class="add-toy-form">
+      <form class="add-toy-form" method='POST' action="http://localhost:3000/toys">
         <h3>Create a toy!</h3>
 
         <input
@@ -46,8 +46,6 @@
       Andy needs your help! <button id="new-toy-btn">Add a new toy!</button>
     </p>
 
-    <div id="toy-collection">
-      <!-- add toys in here -->
-    </div>
+    <div id="toy-collection"></div>
   </body>
 </html>
