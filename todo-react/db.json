@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "description": "clean room",
+      "important": true,
+      "completed": true
+    },
+    {
+      "id": 2,
+      "description": "do dishes",
+      "important": true,
+      "completed": false
+    },
+    {
+      "id": 3,
+      "description": "walk dog",
+      "important": false,
+      "completed": false
+    },
+    {
+      "id": 4,
+      "description": "feed dog",
+      "important": true,
+      "completed": false
+    },
+    {
+      "id": 5,
+      "description": "make bed",
+      "important": false,
+      "completed": false
+    }
+  ]
+}
