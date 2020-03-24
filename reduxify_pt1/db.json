@@ -1,0 +1,56 @@
+{
+  "paintings": [
+  {
+    "id":1,
+    "title":"Portrait of a Carthusian",
+    "image":"https://d32dm0rphc51dk.cloudfront.net/pVc7CubFzVlPhbErTAqyYg/medium.jpg",
+    "slug":"petrus-christus-portrait-of-a-carthusian",
+    "date":"1446",
+    "dimensions":{"width":8.5,"height":11.5},
+    "votes":24,
+    "artist":{
+      "id":1,
+      "name":"Petrus Christus",
+      "hometown":"Baarle-Hertog, Belgium",
+      "birthday":"1410",
+      "deathday":"1475"
+    },
+    "museum":{"id":1,"name":"Unknown Museum"}
+  },
+  {
+    "id":2,
+    "title":"Study of a Young Woman",
+    "image":"https://d32dm0rphc51dk.cloudfront.net/pLcp7hFbgtfYnmq-b_LXvg/medium.jpg",
+    "slug":"johannes-vermeer-study-of-a-young-woman",
+    "date":"ca. 1665â€“1667",
+    "dimensions":{"width":15.75,"height":17.5},
+    "votes":5,
+    "artist":{
+      "id":2,
+      "name":"Johannes Vermeer",
+      "hometown":"Delft, Netherlands",
+      "birthday":"1632",
+      "deathday":"1675"
+    },
+    "museum":{"id":1,"name":"Unknown Museum"}
+  },
+  {
+    "id":3,
+    "title":"Portrait of Gerard de Lairesse",
+    "image":"https://d32dm0rphc51dk.cloudfront.net/6b4QduWxeA1kSnrifgm2Zw/medium.jpg",
+    "slug":"rembrandt-van-rijn-portrait-of-gerard-de-lairesse",
+    "date":"1665â€“1667",
+    "dimensions":{"width":34.5,"height":44.375},
+    "votes":17,
+    "artist":{
+      "id":3,
+      "name":"Rembrandt van Rijn",
+      "hometown":"Leiden, Netherlands",
+      "birthday":"1606",
+      "deathday":"1669"
+    },
+    "museum":{"id":1,"name":"Unknown Museum"}
+  }
+]
+
+}
