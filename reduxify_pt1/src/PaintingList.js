@@ -13,14 +13,6 @@ class PaintingList extends React.Component {
     .then(paintings => {
       this.props.fetchPaintingsSuccess(paintings)
     })
-    .catch(err => {
-      this.props.fetchPaintingsError()
-    })
-  }
-
-  handleVote = id => {
-    // dispatch an action
-    // add the new switch case in my reducer
   }
 
   render() {

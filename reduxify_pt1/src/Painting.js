@@ -1,4 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux'
+
+
 
 const Painting = props => {
   return (
@@ -10,7 +13,7 @@ const Painting = props => {
         <div className="header">{`"${props.painting.title}" by ${props.painting
           .artist.name}`}</div>
         <div className="description">
-          <a onClick={() => props.handleVote(props.painting.id)}>
+          <a onClick={() => props.updateVote(props.painting.id)}>
             <i className="large caret up icon" />
             {props.painting.votes} votes
           </a>
@@ -22,4 +25,24 @@ const Painting = props => {
     </div>
   );
 };
-export default Painting;
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    updateVote: (id) =>{
+      const action = {
+        type: 'UPDATE_VOTE',
+        id: id
+      }
+
+      dispatch(action)
+    }
+  }
+}
+
+
+export default connect(null, mapDispatchToProps)(Painting);
+
+
+
+
+

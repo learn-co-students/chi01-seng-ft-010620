@@ -1,4 +1,5 @@
 import React from 'react';
+import {connect} from 'react-redux'
 
 const Painting = props => {
   return (
@@ -15,10 +16,32 @@ const Painting = props => {
           >
             No
           </div>
-          <div className="ui red basic button"> Delete It</div>
+            <div className="ui red basic button" onClick={() => props.deletePainting(props.painting.id)}> Delete It</div>
         </div>
       </div>
     </div>
   );
 };
-export default Painting;
+
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    deletePainting: (id) => {
+      const action = {
+        type: 'DELETE_PAINTING',
+        id
+      }
+
+      dispatch(action)
+    }
+  }
+}
+
+export default connect(null, mapDispatchToProps)(Painting);
+
+
+
+
+
+
+
